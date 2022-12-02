@@ -25,10 +25,8 @@ public:
         {
             for(size_t j = i+1; j < nums.size(); j++)
             {
-                if(i==j) break;
                 for(size_t k = j+1; k < nums.size(); k++)
                 {
-                    if(i == k || j == k) continue;
                     if((nums.at(i) + nums.at(j) + nums.at(k)) == 0)
                     {
                         std::vector<int> foundVector{nums.at(i), nums.at(j), nums.at(k)};
